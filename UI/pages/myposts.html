@@ -40,11 +40,37 @@
 
 
 
-    
+    <div class='side-bar box'>
+        <form class='filters-form box'>
+            <select name="categories" id="categories">
+                <option>All categories</option>
+                <option>Automobiles</option>
+                <option>Apartments</option>
+                <option>Electronics</option>
+                <option>Clothing</option>
+            </select>
 
-    <div class="products-page box single-property">
+            <select name="status" id="status">
+                <option>sold</option>
+                <option>In stock</option>
+            </select>
 
-        <div class="product-container box single-property">
+            <select name="by-prices" id="by-prices">
+                <option>Hight to Low</option>
+                <option>Low to high</option>
+                <option>Under $100</option>
+                <option>$100-$300</option>
+                <option>$500-$1000</option>
+            </select>
+
+            <button class="button primary ">Submit</button>
+        </form>
+    </div>
+
+    <div class="products-page box">
+        <h1 class="box my-products">My products</h1>
+
+        <div class="product-container box">
             <div class="header">
                 <h2 class="product-title">
                     <a href="#"> Refurbished I-phone 6 in good condition</a>
@@ -57,24 +83,14 @@
                     <div class="img-container">
                         <a href="#"><img src="../images/property.jpg"></a>
                     </div>
-                <div class="product-edit">
-                    <a href='createpost.html'><button class="buy rent">Edit</button></a>
-                    <a href="myposts.html"><button class="buy rent">Delete</button></a>
-                    <a href="myposts.html"><button class="buy rent">Mark Sold</button></a>
-                </div>
+                    <a href="mysinglepost.html"><button class="buy rent">More...</button></a>
                 </div>
 
                 <div class="col-2">
                     
-                    <div class="pro-feature price">Price: 100, 000rwf .</div>
-                    <div class=" pro-feature shipping"> Shipping: Free </div>
-                    <div class="pro-feature type"> Type: 3 bed </div>
-                    <div class="pro-feature location">Location: Kigali</div>
-                    <div class=" pro-feature seller">Seller: Claude </div>
-                    <div class="pro-feature category">Category: Furnitures </div>
-                    <div class="pro-feature amount">Amount: 10+</div>
-                   
-
+                    <div class="pro-feature price">100, 000rwf .</div>
+                    <div class=" pro-feature shipping">Free </div>
+                    <div class="pro-feature type">3 bed </div>
                     
                 </div>
 

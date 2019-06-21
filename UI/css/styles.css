@@ -331,7 +331,7 @@ button:hover, .icon:hover, #login-title:hover{
 
 
 .col-1 {
-    width: 48%;
+    width: 50%;
     float: left;
 }
 .col-2 {
@@ -346,7 +346,7 @@ button:hover, .icon:hover, #login-title:hover{
     display: table;
 }
 
-.product-container{
+/*.product-container{
     padding-bottom: 2px;
     border-bottom: 1px solid whitesmoke;
     width: 49%;
@@ -356,6 +356,15 @@ button:hover, .icon:hover, #login-title:hover{
     border-radius: 3px;
 
 }
+*/
+
+
+.products-page{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
 
 .buy {
     width: 70px;
@@ -412,10 +421,7 @@ button:hover, .icon:hover, #login-title:hover{
     }
 
      @media only screen and (max-width:1000px) {
-            .product-container{
-            width: 48%;
-
-         }
+           
 
             .col-3 {
                 width: 25%;
@@ -437,10 +443,6 @@ button:hover, .icon:hover, #login-title:hover{
 
 @media only screen and (max-width:600px) {
 
-            .product-container{
-            width: 100%;
-
-        }
 
         .img-container img{
         width: 100%;
@@ -463,6 +465,10 @@ button:hover, .icon:hover, #login-title:hover{
             #description{
 
             height: 100px;
+        }
+
+        .products-page{
+            grid-template-columns: auto;
         }
     }
 
@@ -551,6 +557,20 @@ user can edit a product, delete it, and mark it as sold*/
     box-shadow: none;
    
 }
+
+.sold-icon{
+    width:10%;
+    position: absolute;
+    top:38%;
+    left: 25%;
+}
+
+.sold-icon img{
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.6;
+}
+
 /*end of it*/
 
 /* my products*/
@@ -559,4 +579,110 @@ user can edit a product, delete it, and mark it as sold*/
     color: green;
 }
 
+/*end of myproducts*/
+
+
+/* my home*/
+
+
+    .home-section{
+        background: url(../images/head.jpg);
+        width: 100%;
+        min-height: 40vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-present{
+
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .home-present button{
+        margin-left: auto;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1em;
+        
+    }
+
+    
+
+    .get-started{
+        width: 50%;
+        margin: auto;
+    }
+
+    .home-present div{
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+/*end of home*/
+
+.report-form button{
+    background-color: darkred
+}
+
+.side a{
+    color: black;
+}
+
+.side{
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.map{
+    width: 30%;
+}
+#location{
+    width:400px;
+    height:400px;
+    background:yellow
+}
+
+.about h1{
+    font-weight: bold;
+    color: green;
+    font-size: 2em;
+    font-family:courier, Geneva, Tahoma, sans-serif;
+
+}
+.about h2{
+    font-family: sans-serif;
+    color: silver;
+    width: 28%;
+    background-color: darkgreen;
+    border-radius: 8px;
+}
+
+.contact{
+    opacity: 0.6;
+}
+
+.home-explain{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: green;
+    
+}
+
+.home-explain p{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: courier;
+    color: whitesmoke
+}
+
+@media only screen and (max-width:800px) {
+    .home-explain{
+        grid-template-columns: auto;
+    }
+
+}
 

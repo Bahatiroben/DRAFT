@@ -34,32 +34,18 @@
 <div class="separator"></div>
 
     <div class="create-container form">
-        <form action="#" class="box">
-        <fieldset>
-            <legend>Create a Post</legend>
-            <input type="text" name="title" id="title" placeholder="Title">
-            <br>
-            <input type="number" name="price" id="price" placeholder="Price">
-            <br>
-            <input type="text" name="shipping" id="shipping" placeholder="Shipping">
-            <br>
-            <input type="text" name="type" id="type" placeholder="Type">
-            <br>
-            <select>
-                <option value='rent'>Rent</option>
-                <option value='sale'>Sale</option>
-            </select>
-            <br>
-            <textarea id='description'>
-                Description...
-            </textarea>
-            <br>
-
-            <input type="file" name="pictures" id="type">
-            <br>
-            <button class="button primary save" type="submit">Save</button>
-        </fieldset>
-        </form>
+            <form class="report-form">
+                    <fieldset>
+                    <legend>Report Spam</legend>
+                    <input type="text" name="reason" id="reason" placeholder="Reason">
+                    <input type="email" name="email" id="email" placeholder="your email">
+                    <input type="text" name="productId" id="ProductId" placeholder="Product iD">
+                    <textarea name="description" id="description" cols="30" rows="10" >Details</textarea>
+                    <button class="primary button">Report</button>
+                    
+                </fieldset>
+                </form>
+        
     </div>
 
         <!--The footer of the page-->

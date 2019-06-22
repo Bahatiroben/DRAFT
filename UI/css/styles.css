@@ -222,7 +222,7 @@ button:hover, .icon:hover, #login-title:hover{
             }
 
         .burger{
-            display: inline;
+            display: none;
             cursor: pointer;
         }
 

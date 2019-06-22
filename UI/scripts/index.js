@@ -25,15 +25,4 @@ const navSlide =()=>{
     });
 }
 
-const reportBtn = ()=>{
-    let button = document.querySelector('.btn-report');
-    button.addEventListener("click", ()=>{
-        let reportForm = document.querySelector("report-form");
-        reportForm.style = "display: block";
-        reportForm.style.animation = "display 2s ease in";
-    })
-}
-
-reportBtn();
-
 navSlide();
